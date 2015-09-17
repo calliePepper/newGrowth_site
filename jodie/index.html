@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<title>Jodie Peters - Home</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="flexcrollstyles.css" rel="stylesheet" type="text/css" />
+		<script type='text/javascript' src="flexcroll.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	</head>
+	
+	<body>
+	<div id="wrap">
+		<div id="head"><img src="top.png" class="top"> </img></div>
+		<div id="pusherRobot"> </div>
+		<div id="box">
+			<h1>-    WELCOME    -</h1>
+			
+			<p>Press the blocks below to navigate the website.</p>
+			
+			<p>For help click on the question block.</p>
+		</div>
+		<div id="shoverRobot"> </div>
+		<div id="buttons">
+		<div id="labels" class="info">
+		<img src="help1.png" id="label1"> </img>
+		<img src="help2.png" id="label2"> </img>
+		<img src="help3.png" id="label3"> </img>
+		</div>
+		<img src="help.png" class="quest"> </img>
+		<a href="details.html"><img src="button.png" class="button1"></img></a>
+		<a href="resume.html"><img src="button.png" class="button2"></img></a>
+		<a href="games.html"><img src="button.png" class="button3"></img></a>
+		</div>
+		<div id="koopaHolder">
+			<div class="koopa-sprite"> </div>
+		</div>
+		<div id="booHolder">
+			<div class="boo-sprite"> </div>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function() {
+		var timer;
+		$('.quest').click(function(){
+			 		clearTimeout(timer);
+		timer = setTimeout(eval("hurp"),"3000");
+			 $('.info').show();
+		   });
+		function hurp(){
+			 $('.info').hide();
+		   };
+
+	});
+	</script>
+	</body>
+</html>

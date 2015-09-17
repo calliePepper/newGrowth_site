@@ -1,0 +1,197 @@
+p {
+font-family:Trajan Pro, Helvetica;
+overflow: hidden;
+font-size:18px;
+color:#17a130;
+}
+
+table {
+font-family:Trajan Pro, Helvetica;
+overflow: hidden;
+font-size:18px;
+color:#17a130;
+}
+
+h1{
+font-family:Trajan Pro, Helvetica;
+overflow: hidden;
+font-size:20px;
+color:#17ff30;
+}
+
+a {
+font-family:Trajan Pro, Helvetica;
+overflow: hidden;
+text-decoration:underline;
+color:#FFF;
+}
+
+body{
+background-color:#000000;
+color:#FFFFFF;
+height: 100%;
+text-align: center;
+overflow:hidden;
+}
+
+#wrap{
+background-image: url(Background01.png);
+margin-left:auto;
+margin-right:auto;
+left:-8px;
+position:relative;
+height:1050px;
+width:1680px;
+text-align: left;
+}
+
+#home_wrap{
+background-image: url(Background01.png);
+margin-left:auto;
+margin-right:auto;
+left:-8px;
+position:relative;
+height:1050px;
+width:1680px;
+text-align: left;
+}
+
+#header{
+position:relative;
+top:10px;
+left:0px;
+z-index:2;
+}
+
+#navigation{
+position:absolute;
+top:283px;
+left:20px;
+z-index:2;
+}
+
+.details{
+position:relative;
+top:0px;
+left:0px;
+z-index:3;
+}
+
+.resume{
+position:relative;
+top:66px;
+left:-130px;
+}
+
+.games{
+position:relative;
+top:132px;
+left:-265px;
+}
+
+.assets{
+position:relative;
+top:198px;
+left:-393px;
+}
+
+.prototypes{
+position:relative;
+top:264px;
+left:-510px;
+}
+
+#home_navigation{
+position:absolute;
+top:20px;
+left:700px;
+z-index:2;
+}
+
+.home_details_picture{
+position:absolute;
+top:0px;
+left:0px;
+display:block;
+width:223px;
+height:849px;
+background:url(background01.png) bottom;
+text-indent:-99999px;
+z-index:3;
+}
+
+.home_details_picture:hover {
+background-position:0 0;
+}
+
+.home_resume_picture{
+position:absolute;
+top:0px;
+left:243px;
+display:block;
+width:223px;
+height:847px;
+background:url(background01.png) bottom;
+text-indent:-99999px;
+}
+
+.home_resume_picture:hover {
+background-position:0 0;
+}
+
+.home_games_picture{
+position:absolute;
+top:0px;
+left:486px;
+display:block;
+width:223px;
+height:847px;
+background:url(background01.png) bottom;
+text-indent:-99999px;
+}
+
+.home_games_picture:hover {
+background-position:0 0;
+}
+
+.home_assets_picture{
+position:absolute;
+top:0px;
+left:729px;
+display:block;
+width:223px;
+height:847px;
+background:url(background01.png) bottom;
+text-indent:-99999px;
+}
+
+.home_assets_picture:hover {
+background-position:0 0;
+}
+
+#content{
+width:1255px;
+height:512px;
+position:absolute;
+overflow:auto;
+left:300px;
+top:270px;
+outline:none;
+z-index:2;
+}
+
+#scroller {
+height:489px;
+}
+
+#footer{
+width:1680px;
+height:1050px;
+top:-125%;
+left:20px;
+margin-left:auto;
+margin-right:auto;
+position:relative;
+background:url(insert footer image here) no-repeat left bottom;
+z-index:1;
+}

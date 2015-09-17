@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule    ^article/([A-Za-z0-9-]+)/?$    article.php?name=$1    [NC,L]  
+RewriteRule    ^project/([A-Za-z0-9-]+)/?$    project.php?name=$1    [NC,L]  
+

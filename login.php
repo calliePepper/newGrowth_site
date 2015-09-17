@@ -1,0 +1,97 @@
+<?php
+  include $_SERVER['DOCUMENT_ROOT'].'/scripts/dbConnector.php';
+  $error = '0';
+  if ($_GET['error'] == 1) {
+    $error = 'You dare fool me? I SHALL BLOCK OUT THE SUN';
+  }
+?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=uTF-8" /> 
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>New-Growth</title>
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+        <link href="/css/default.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="/scripts/jquery.js"></script>
+        <script type="text/javascript" src="/scripts/arrange.js"></script>
+        <script type="text/javascript" src="/scripts/sha512.js"></script>
+    
+    </head>
+    <body>
+        <header class='loginPageHeader'>
+            <?php if ($error != '0') { ?>
+              <div id='errorBox'>
+                <p><?php echo $error; ?> (Wrong username/password)</p>
+                </div>
+            <?php } ?>
+            <div id='login'>
+              <h1>Login</h1>
+              <form method="post" id="myForm" name="login_form" action='/scripts/process_login.php'>
+                <input type='text' name='email' id='email' placeholder='username' />
+                <input type='password' name='password' id='password' placeholder='password' />
+                <input type='submit' value='login' name='loginBtn' id='loginBtn' onclick="formhash(this.form, this.form.password);" />
+              </form>
+            </div>
+            <div id='proceduralArea'>
+                <div id='leftSide' class='sideAreas'>
+
+                </div>
+                <div id='rightSide' class='sideAreas'>
+
+                </div>                
+            </div>
+            <div id='overlay'>
+                <div id='centrePiece'>
+                     <div id='middleArea'>
+
+                    </div>
+                    <img src='/img/New-Growth_fae.png' alt='fae' id='fae' />
+                    <img src='/img/New-Growth_jodie.png' alt='jodie' id='jodie' />
+                </div>
+                <div id='grass'> </div>
+            </div>
+        </header>
+        <div id='wrapper'>
+            <nav>
+                <a href='/index.php' class='navigationGroup homeNav'></a>
+                <a href='/projects.php' class='navigationGroup projectNav'></a>
+                <a href='/portfolios.php' class='navigationGroup portfolioNav'></a>
+                <a href='/contact.php' class='navigationGroup contactNav'></a>
+            </nav>
+                        
+        </div>
+        <script>
+            var testMode=0;
+            if ($(window).width() > 900) {
+              parseAndFill('proceduralArea','leftSide','rightSide','middleArea');
+            } else {
+              $('#proceduralArea').css('background','url(../img/mobileBg.png) center bottom');
+            }
+            function changeLayout() {
+                if (testMode == 0)  {
+                    $('.specialProject').addClass('textSpecial');
+                    $('#contentArea').addClass('testContent');
+                    testMode = 1;
+                } else if (testMode == 1) {
+                    $('#clearMain').addClass('testClear');
+                    testMode = 2;
+                } else {
+                    $('.specialProject').removeClass('textSpecial');
+                    $('#contentArea').removeClass('testContent');
+                    $('#clearMain').removeClass('testClear');
+                    testMode = 0;
+                }
+            }
+
+            <?php if ($error != '0') { ?>
+                var errorMachine = setTimeout(function() {$('.Sun').hide()}, 2000)
+            <?php } ?>
+        </script>
+    </body>
+</html>

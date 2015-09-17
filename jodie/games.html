@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<title>Jodie Peters - Games</title>
+		<link href="style-games.css" rel="stylesheet" type="text/css" />
+		<link href="flexcrollstyles.css" rel="stylesheet" type="text/css" />
+		<script type='text/javascript' src="flexcroll.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	</head>
+	
+	<body>
+	<div id="wrap">
+		<div id="head"><img src="top.png" class="top"> </img></div>
+		<div id="pusherRobot"> </div>
+		<div id="title3" class="heading"><img src="header3.png"> </img></div>
+		<div id="box-flexcroll-vscroller"><div class="flexcroll-scrollbar"></div></div>
+		<div id="ball"><img src="ball.png" class="poletop"> </img></div>
+		<div id="box" class="flexcroll">
+			<p><a href="Content/Full Size/Reincarnate_Prototype.png" target="_blank"><img src="Content/reincarnate.jpg" align='left' style='margin: 7px 10px 10px 0px; float: left;' /></a>
+
+			<h1>Reincarnate Prototype  -  <A href="Content/Reincarnate Prototype.rar" target="_blank">Prototype download</A></h1></p>
+
+			<p>Created in collaboration with two other Qantm students in two weeks for a Iron Dev design challenge.</p>
+
+			<p>Reincarnate is a 2D platform game designed around the concept of rebirth. Art and play style is similar to the 2d time manipulation game Braid. The Alpha prototype demonstrates art style, a few simple puzzles and the intended flow of the game.<br /><br />
+My role in the prototype development was concepting, level and puzzle design, documentation and team management.</p>
+
+			<p>Click on image to open full size view.</p>
+
+			<p><p><A href="Content/Reincarnate - Design Brief.pdf" target="_blank">Design Brief</A> - Prototype design brief PDF.</p>
+
+			<p><img src="Content/avalon.png" align='left' style='margin: 7px 10px 10px 0px; float: left;' /><h1>Avalon: The Fallen  -  <A href="http://www.angerissuesinteractive.com/Josh/Files/UDKInstall-Avalon1.1.exe" target="_blank">Game Download</A></h1></p>
+
+			<p>Final project for Qantm College in 2010.</p>
+
+			<p>Avalon: The Fallen is a Celtic themed adventure/survival horror game created using the UDK engine. The game is set in a dark eerie supernatural world based on European mythology where even friendly looking mushrooms will try to lure you to a long painful death.<br /><br />
+My role in the project is quality assurance which mainly focuses on testing; though I have had a hand in quite a few aspects of the game including design, props, GUI elements and even a few multimedia promotional items.</p>
+
+			<p><A href="http://new-growth.com/Student_work/Avalon/index.php" target="_blank">Game Website</A> - Extra information about the game<br />
+			<A href="http://www.angerissuesinteractive.com/" target="_blank">Company Website</A> - Information about the project team<br />
+			<A href="http://new-growth.com/Student_work/Avalon/trailer.php" target="_blank">Cinematic Trailer</A> - Conveys the cinematic feel of the game</p><br />
+
+			<h1>Avalon: The Fallen  -  Gameplay Trailer</h1>
+			<p><object width="620" height="400" ><param name="movie" value="Gameplay.swf" style='margin: 7px 10px 10px 0px; float: left;'></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="Gameplay.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="620" height="400"></embed></object></p><br />
+		</div>
+		<div id="buttons">
+			<div id="labels" class="info">
+				<img src="help1.png" id="label1"> </img>
+				<img src="help2.png" id="label2"> </img>
+				<img src="help5.png" id="label3"> </img>
+				<img src="help4.png" id="label4"> </img>
+			</div>
+			<img src="help.png" class="quest"> </img>
+			<a href="details.html"><img src="button.png" class="button1"></img></a>
+			<a href="resume.html"><img src="button.png" class="button2"></img></a>
+			<a href="index.html"><img src="button.png" class="button3"></img></a>
+		</div>
+				<div id="koopaHolder">
+			<div class="koopa-sprite"> </div>
+		</div>
+		<div id="booHolder">
+			<div class="boo-sprite"> </div>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function() {
+		var timer;
+		$('.quest').click(function(){
+			 		clearTimeout(timer);
+		timer = setTimeout(eval("hurp"),"3000");
+			 $('.info').show();
+		   });
+		function hurp(){
+			 $('.info').hide();
+		   };
+	});
+	</script>
+	</body>
+</html>
